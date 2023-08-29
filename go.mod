@@ -1,1 +1,3 @@
-module Untitled_Folder
+module golang
+
+go 1.21
