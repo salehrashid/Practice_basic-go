@@ -15,4 +15,10 @@ func main() {
 	var b = 2
 
 	fmt.Println("hasil penjumlahan dari a dan b adalah", a+b)
+
+	fmt.Println("======================")
+
+	var i = 10
+	i += 10 //i = i + 10
+	println(i)
 }
