@@ -28,4 +28,20 @@ func main() {
 	example = 123
 	newExample := tipeInt(example)
 	fmt.Println(newExample.ConvToStr(), "from int to string")
+
+	typeDeclaration()
+}
+
+func typeDeclaration() {
+	type Tulisan string
+	type Boolean bool
+	type Angka int
+
+	var alamat Tulisan = "bogor"       //var alamat string = "bogor"
+	var udahNikahBelom Boolean = false //var udahNikahBelom bool = false
+	var umur Angka = 19                //var umur int = 19
+
+	println(udahNikahBelom)
+	println(alamat)
+	println(umur)
 }
