@@ -4,8 +4,8 @@ func main() {
 	name := "saleh"
 	name2 := "saleh"
 
-	value1 := 1
-	value2 := 2
+	value1 := 10
+	value2 := 20
 
 	var resultValue1 = value1 < value2
 	var resultValue2 = value1 > value2
@@ -17,4 +17,6 @@ func main() {
 
 	println(resultString1, resultString2)
 	println(resultValue1, resultValue2, resultValue3, resultValue4)
+	println(value1 >= 10 && value2 < 21)
+	println(value1 >= 10, value1 <= 10)
 }
