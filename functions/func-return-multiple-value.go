@@ -1,9 +1,9 @@
 package main
 
 func main() {
-	name, age, status, lajang := selfIdentity()
+	name, age, status, marriage := selfIdentity()
 	nameIntro, ageIntro, statusIntro, marriageIntro := introWords()
-	println(nameIntro, name, ageIntro, age, statusIntro, status, marriageIntro, lajang)
+	println(nameIntro, name, ageIntro, age, statusIntro, status, marriageIntro, marriage)
 }
 
 func selfIdentity() (string, int, string, bool) {
