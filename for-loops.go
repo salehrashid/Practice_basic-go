@@ -10,7 +10,7 @@ func main() {
 		println(i, ":")
 	}
 
-	println("================ print data array with for loops ================")
+	println("================ print data array with enhanced for loops (foreach) ================")
 
 	namaMotorArray := [3]string{
 		"MV Agusta",
@@ -22,7 +22,7 @@ func main() {
 		fmt.Println(value)
 	}
 
-	println("================ print data slice with for loops ================")
+	println("================ print data slice with enhanced for loops (foreach) ================")
 
 	namaMobilSlice := []string{
 		"Brabus",
@@ -34,7 +34,7 @@ func main() {
 		fmt.Println(value)
 	}
 
-	println("================ print data map with for loops ================")
+	println("================ print data map with enhanced for loops (foreach) ================")
 
 	namaPesawatMap := map[string]string{
 		"pesawat1": "Sukhoi Su-35S",
@@ -68,5 +68,15 @@ func main() {
 		} else {
 			println(i, "ganjil")
 		}
+	}
+
+	println("================ nested for loops ================")
+
+	for i := 1; i <= 5; i++ {
+		for j := i; j <= 5; j++ {
+			print(j, " ")
+		}
+
+		println()
 	}
 }

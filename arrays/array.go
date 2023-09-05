@@ -4,6 +4,9 @@ import "fmt"
 
 func main() {
 	/** membuat array dengan panjang kapasitas 3 element saja dan bertipe string **/
+
+	println("================ membuat array ================")
+
 	var nama [3]string
 
 	nama[0] = "saleh"
@@ -17,7 +20,7 @@ func main() {
 	/** [...] = untuk membuat array dengan panjang kapasitas element yang tak terhingga **/
 	var value = [...]int{
 		0,
-		5,
+		0,
 		0,
 		0,
 		0,
@@ -31,6 +34,9 @@ func main() {
 
 	/** untuk mengubah value dari element ke 2 dengan index 1 **/
 	value[1] = 5
+
+	println("================ merubah value array menjadi angka 5 ================")
+
 	fmt.Println(value)
 
 	var carName = [3]string{
@@ -39,9 +45,12 @@ func main() {
 		"shelby",
 	}
 
+	println("================ print data array ================")
+
 	fmt.Println(carName)
 
-	/** untuk menghitung panjang array **/
+	println("================ print panjang data array ================")
+
 	fmt.Println(len(carName))
 
 	var smartphoneBrand = [...]string{
@@ -53,9 +62,13 @@ func main() {
 		"vivo",
 	}
 
+	println("================ print data array dengan for loops ================")
+
 	for i := 0; i < len(smartphoneBrand); i++ {
 		fmt.Println(smartphoneBrand[i])
 	}
+
+	println("================ print data array dengan enhanced for loops (foreach) ================")
 
 	//foreach, jika tidak mau print index maka cukup di ignore saja menggunakan underscore "_" atau blank identifier
 	for index, value := range smartphoneBrand {
