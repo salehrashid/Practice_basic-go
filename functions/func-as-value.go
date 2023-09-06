@@ -1,6 +1,8 @@
 package main
 
 func main() {
+	result := getSayonara("saleh")
+	println(result)
 	println(getSayonara("saleh"))
 }
 
