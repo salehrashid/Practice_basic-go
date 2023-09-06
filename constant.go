@@ -1,16 +1,16 @@
 package main
 
 func main() {
-	const name = "saleh"
+	const NAME = "saleh"
 
 	//hanya sekali saja mendeklarasikan sebuah nilai const
-	//name = "rashid"
+	//NAME = "rashid"
 
 	//bisa juga membuat multiple nilai dalam satu const, sama seperti variable
 	const (
-		firstName = ""
-		lastName  = ""
+		FIRST_NAME = ""
+		LAST_NAME  = ""
 	)
 
-	println(name)
+	println(NAME)
 }
