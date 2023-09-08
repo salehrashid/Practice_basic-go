@@ -9,12 +9,14 @@ func main() {
 
 	formatCase("HAI", lowerCase)
 
-	paragraph("sasasasiashaish", desc)
+	paragraph("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", desc)
 
 	println(apply(add, 5, 3, 4))
 	println(apply(multiply, 5, 3, 4))
 
 	println(foo(identity, "saleh ", "XII RPL B"))
+	println(foo(identity, "umar ", "XII DMM"))
+	println(foo(identity2, "rizky ", "XII TKJ"))
 }
 
 type Filter func(string) string
@@ -72,5 +74,9 @@ func foo(callback Callback, nama, kelas string) string {
 }
 
 func identity(name, class string) string {
+	return name + class
+}
+
+func identity2(name, class string) string {
 	return name + class
 }
