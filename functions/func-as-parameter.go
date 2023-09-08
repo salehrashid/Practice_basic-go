@@ -20,6 +20,10 @@ func main() {
 }
 
 type Filter func(string) string
+type Formatter func(string) string
+type Description func(string) string
+type FuncParam func(int, int, int) int
+type Callback func(string, string) string
 
 func sayHelloWithFilter(name string, filter Filter) {
 	println("Hello", filter(name))
@@ -33,27 +37,22 @@ func spamFilter(name string) string {
 	}
 }
 
-type Formatter func(string) string
-
 func formatCase(txt string, formatter Formatter) {
 	println(formatter(txt))
 }
+
 func lowerCase(txt string) string {
 	toLowerCase := strings.ToLower(txt)
 	return toLowerCase
 }
 
-type Tulisan func(string) string
-
-func paragraph(text string, tulisan Tulisan) {
+func paragraph(text string, tulisan Description) {
 	println(tulisan(text))
 }
 
 func desc(txt string) string {
 	return txt
 }
-
-type FuncParam func(int, int, int) int
 
 func apply(funcParam FuncParam, a, b, c int) int {
 	return funcParam(a, b, c)
@@ -66,8 +65,6 @@ func add(x, y, z int) int {
 func multiply(x, y, z int) int {
 	return x * y * z
 }
-
-type Callback func(string, string) string
 
 func foo(callback Callback, nama, kelas string) string {
 	return callback(nama, kelas)
