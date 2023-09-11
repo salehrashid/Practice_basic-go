@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	runApplication(false)
+	crash()
 }
 
 func runApplication(error bool) {
@@ -20,4 +21,15 @@ func endApplication() {
 		fmt.Println("something went wrong:", err)
 	}
 	fmt.Println("application compiled successfully")
+}
+
+func run() {
+	err := recover()
+	fmt.Println("nangkap error:", err)
+	println("habis")
+}
+
+func crash() {
+	defer run()
+	panic("error bang")
 }
