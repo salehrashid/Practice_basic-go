@@ -37,3 +37,33 @@ func main() {
 	movies.Duration = 1.46
 	movies.favoriteMovie()
 }
+
+/**
+Struct berfungsi sebagai sebuah template untuk kumpulan beberapa data.
+Jika dibandingkan dengan pemrograman berorientasi objek, struct ini
+hampir sama seperti sebuah objek atau class. Biasanya, struct digunakan
+sebagai representasi dari sebuah data dalam aplikasi kita.
+*/
+
+/**
+class FavoriteAnime {
+ String name;
+ String genre;
+ String waifu;
+ int eps;
+ int season;
+
+ FavoriteAnime(this.name, this.genre, this.waifu, this.eps, this.season);
+
+ void myReview() {
+   print(
+       "My favorite anime is $name, genre $genre. Have an $eps eps and $season season. And my waifu is $waifu, ahhhh wangy wangy");
+ }
+}
+
+void main() {
+ var anime =
+     FavoriteAnime("majo no tabitabi", "fantasy, adventure", "elaina", 12, 1);
+ anime.myReview();
+}
+*/
