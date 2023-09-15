@@ -19,25 +19,46 @@ variabel objek yang struct-nya hanya dipakai sekali.
 */
 
 type Car struct {
-	name   string
-	engine string
+	name       string
+	engineType string
 }
 
 func main() {
 	//anonymous struct
 	car := struct {
-		name   string
-		engine string
+		name       string
+		engineType string
 	}{
-		name:   "dodge",
-		engine: "Hemi V8",
+		name:       "dodge",
+		engineType: "Hemi V8",
 	}
 	fmt.Println("anonymous struct:", car)
 
 	//struct biasa
 	car2 := Car{
-		name:   "porsche",
-		engine: "flat 6",
+		name:       "porsche",
+		engineType: "flat 6",
 	}
 	fmt.Println("struct biasa:", car2)
+
+	//anonymous struct dengan keyword var
+	var car3 struct {
+		name       string
+		engineType string
+	}
+	car3.name = "toyota supra"
+	car3.engineType = "inline 6"
+
+	fmt.Println("anonymous struct dengan keyword var:", car3)
+
+	//anonymous struct dengan keyword var sekaligus inisialisasi
+	var car4 = struct {
+		name       string
+		engineType string
+	}{
+		name:       "skyline r34",
+		engineType: "inline 6",
+	}
+
+	fmt.Println("anonymous struct dengan keyword var sekaligus inisialisasi: ", car4)
 }
