@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+/**
+https://dasarpemrogramangolang.novalagung.com/A-struct.html
+*/
+
 type FavoriteAnime struct {
 	Name, Genre, Waifu string
 	Eps, Season        int

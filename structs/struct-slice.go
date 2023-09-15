@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+/**
+https://dasarpemrogramangolang.novalagung.com/A-struct.html
+*/
+
 type Animes struct {
 	name string
 	eps  int

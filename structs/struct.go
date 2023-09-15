@@ -2,10 +2,15 @@ package main
 
 import "fmt"
 
+/**
+https://dasarpemrogramangolang.novalagung.com/A-struct.html
+*/
+
 /*
 *
 deklarasi struct Identity
 */
+
 type Identity struct {
 	FullName, Address string
 	Age               int

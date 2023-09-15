@@ -3,6 +3,10 @@ package main
 import "fmt"
 
 /**
+https://dasarpemrogramangolang.novalagung.com/A-struct.html
+*/
+
+/**
 Embedded struct adalah mekanisme untuk menempelkan
 sebuah struct sebagai properti struct lain.
 */

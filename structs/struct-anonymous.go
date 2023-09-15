@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+/**
+https://dasarpemrogramangolang.novalagung.com/A-struct.html
+*/
+
 /*
 *
 An anonymous struct is just like a normal struct,
