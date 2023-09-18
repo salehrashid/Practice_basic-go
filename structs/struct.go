@@ -2,39 +2,52 @@ package main
 
 import "fmt"
 
+/**
+https://dasarpemrogramangolang.novalagung.com/A-struct.html
+*/
+
+/*
+*
+deklarasi struct Identity
+*/
+
 type Identity struct {
 	FullName, Address string
 	Age               int
-	Kerjaan           bool
-	devices           string
+	Work              bool
+	Devices           string
 }
 
+/*
+*
+penerapan struct
+*/
 func main() {
 
-	println("================ cara pertama ================")
+	println("================ inisialisasi cara pertama ================")
 
 	var identity Identity
 	identity.FullName = "Saleh Rashid Babsel"
 	identity.Age = 19
 	identity.Address = "Bogor Kota"
-	identity.devices = "Realme C2 " + "Lenovo ThinkBook"
-	identity.Kerjaan = true
+	identity.Devices = "Realme C2 " + "Lenovo ThinkBook"
+	identity.Work = true
 
 	fmt.Println(identity)
 
-	println("================ cara kedua ================")
+	println("================ inisialisasi cara kedua ================")
 
 	identity2 := Identity{
 		FullName: "Rizky",
 		Address:  "Bogor",
 		Age:      18,
-		Kerjaan:  true,
-		devices:  "Asus VivoBook",
+		Work:     true,
+		Devices:  "Asus VivoBook",
 	}
 
 	fmt.Println(identity2)
 
-	println("================ cara ketiga ================")
+	println("================ inisialisasi cara ketiga ================")
 
 	/**
 	disarankan menggunakan cara yang kedua agar lebih mudah dibandingkan
@@ -45,4 +58,15 @@ func main() {
 	identity3 := Identity{"Umar", "Kuwait", 18, true, "mac m1"}
 
 	fmt.Println(identity3)
+
+	println("================ inisialisasi cara keempat ================")
+
+	var identity4 = Identity{}
+	identity4.FullName = "Saleh Rashid Babsel"
+	identity4.Age = 19
+	identity4.Address = "Bogor Kota"
+	identity4.Devices = "Realme C2 " + "Lenovo ThinkBook"
+	identity4.Work = true
+
+	fmt.Println(identity4)
 }
