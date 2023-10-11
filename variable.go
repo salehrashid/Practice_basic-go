@@ -26,4 +26,8 @@ func main() {
 
 	benar = true
 	println(benar)
+
+	//bisa mendeklarasi dan inisialisasi beberapa variable sekaligus
+	var1, var2, var3 := 22, "w", true
+	println(var1, var2, var3)
 }
