@@ -15,8 +15,9 @@ func main() {
 		FullName: "Rashid",
 		Age:      63,
 	}
-	jsonData, err := json.Marshal(user)
 
+	//JSON to Struct
+	jsonData, err := json.Marshal(user)
 	if err != nil {
 		fmt.Println(err.Error())
 	}

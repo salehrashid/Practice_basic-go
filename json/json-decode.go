@@ -16,6 +16,7 @@ func main() {
 
 	var data User
 
+	//Struct to JSON
 	err := json.Unmarshal(jsonData, &data)
 	if err != nil {
 		fmt.Println(err.Error())
